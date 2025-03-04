@@ -16,6 +16,13 @@ import org.springframework.stereotype.Service;
 public class AuthService {
 //    TODO: Test the service
 //    TODO: hash password so that the actual password isn't saved to the db but its hash
+//    TODO: add jwt configurations
+//    TODO: implement login
+//    TODO: implement logout
+//    TODO: implement forgot password
+//    TODO: implement registering / signing in using google
+//    TODO: implement registering / signing in using microsoft
+//    TODO: implement registering / signing in using facebook
 
 
     @Autowired
@@ -74,5 +81,10 @@ public class AuthService {
 
     public boolean validatePassword (String password) {
         return password.length() > 6;
+    }
+
+
+    public void hashPassword() {
+
     }
 }
